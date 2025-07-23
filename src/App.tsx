@@ -264,6 +264,59 @@ function App() {
         </div>
       </section>
 
+      {/* Delivery Areas Section */}
+      <section className="py-16 bg-black">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-center mb-6">
+            Áreas de <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">Entrega</span>
+          </h2>
+          
+          <div className="max-w-4xl mx-auto bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-700">
+            <div className="flex items-center gap-3 mb-4">
+              <MapPin className="w-6 h-6 text-red-500" />
+              <h3 className="text-xl font-bold text-amber-400">Antes de mais nada, entregamos APENAS nas seguintes cidades:</h3>
+            </div>
+            
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-gray-300">
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Arujá</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Barueri</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Carapicuíba</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Cotia</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Diadema</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Embu das Artes</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Ferraz de Vasconcelos</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Guarulhos</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Itapevi</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Itaquaquecetuba</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Jandira</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Mauá</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Mogi das Cruzes</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Osasco</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Poá</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Santo André</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">São Bernardo do Campo</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">São Caetano do Sul</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">São Paulo</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Suzano</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Taboão da Serra</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Caieiras</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Cajamar</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Campo Limpo Paulista</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Francisco Morato</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Franco da Rocha</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Jundiaí</div>
+              <div className="bg-gray-800/50 p-2 rounded-lg text-center">Mairiporã</div>
+            </div>
+            
+            <div className="mt-6 text-center">
+              <p className="text-gray-400 text-sm">
+                Se sua cidade não está na lista acima, infelizmente não realizamos entregas na sua região.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Urgency Section */}
       <section className="py-16 bg-gradient-to-r from-red-900/50 to-orange-900/50">
         <div className="container mx-auto px-4 text-center">
