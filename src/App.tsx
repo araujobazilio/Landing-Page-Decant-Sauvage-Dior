@@ -1,5 +1,6 @@
 import React from 'react';
-import { Clock, Truck, CreditCard, Star, Shield, Phone, MapPin, Zap, Heart, Award } from 'lucide-react';
+import { Clock, Truck, CreditCard, Star, Shield, Phone, MapPin, Zap, Heart, Award, Play } from 'lucide-react';
+import YouTube from 'react-youtube';
 
 function App() {
   const handleOrderClick = () => {
@@ -197,6 +198,40 @@ function App() {
               <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 to-orange-500/10 rounded-3xl blur-3xl -z-10"></div>
             </div>
           </div>
+          
+          {/* Video Embed */}
+          <div className="mt-12 max-w-2xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
+            <h3 className="text-2xl font-bold mb-4 text-center">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">Confira</span> o produto em vídeo
+            </h3>
+            <div className="aspect-w-16 aspect-h-9">
+              <YouTube 
+                videoId="YSnELABhbSo"
+                opts={{
+                  width: '100%',
+                  height: '100%',
+                  playerVars: {
+                    autoplay: 0,
+                    rel: 0,
+                    modestbranding: 1,
+                    showinfo: 0,
+                    controls: 1,
+                    loop: 0,
+                    fs: 1,
+                    cc_load_policy: 0,
+                    iv_load_policy: 3,
+                    disablekb: 0
+                  },
+                }}
+                className="w-full aspect-video"
+              />
+            </div>
+            <div className="bg-gradient-to-r from-amber-500/10 to-orange-500/10 p-4 border-t border-amber-500/20">
+              <p className="text-center text-amber-400 font-medium">
+                Dior Sauvage - O Perfeito para ocasiões especiais
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -361,6 +396,8 @@ function App() {
           </div>
         </div>
       </section>
+
+
 
       {/* Footer */}
       <footer className="bg-black py-8 border-t border-gray-800">
